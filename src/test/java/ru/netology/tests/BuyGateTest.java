@@ -32,7 +32,7 @@ public class BuyGateTest {
     void buyPositiveAllFieldValid() {
         val startPage = new paymentMethod();
         val payment = startPage.goToBuyPage();
-        payment.inputData(DataHelper.getValidCard());
+        payment.inputData(DataHelper.getApprovedCard());
         payment.waitNotificationApproved();
         assertEquals("OK", "OK");
     }
@@ -150,7 +150,7 @@ public class BuyGateTest {
     }
 
     @Test
-    void buyNegativeOwnerCirillic() {
+    void buyNegativeOwnerCyrillic() {
         val startPage = new paymentMethod();
         val payment = startPage.goToBuyPage();
         payment.inputData(DataHelper.getCardHolderCirillic());
