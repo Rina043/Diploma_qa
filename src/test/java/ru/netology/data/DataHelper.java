@@ -20,12 +20,12 @@ public class DataHelper {
         return new Card("", "", "", "", "");
     }
 
-    public static String getShiftedMonth(){
+    public static String getShiftedMonth() {
         int shift = (int) (Math.random() * 10);
         return LocalDate.now().plusMonths(shift).format(DateTimeFormatter.ofPattern("MM"));
     }
 
-    public static String getShiftedYear(int yearCount){
+    public static String getShiftedYear(int yearCount) {
         return LocalDate.now().plusYears(yearCount).format(DateTimeFormatter.ofPattern("YY"));
     }
 
@@ -143,7 +143,7 @@ public class DataHelper {
         return new Card("4444444444444441", month, year, holder, cvv);
     }
 
-    public static Card getCardHolderCirillic() {
+    public static Card getCardHolderCyrillic() {
         Faker faker = new Faker(new Locale("ru"));
         String holder = faker.name().firstName() + " " + faker.name().lastName();
         String month = getShiftedMonth();

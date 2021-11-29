@@ -152,7 +152,7 @@ public class CreditGateTest {
     void creditNegativeOwnerCyrillic() {
         val startPage = new paymentMethod();
         val payment = startPage.goToCreditPage();
-        payment.inputData(DataHelper.getCardHolderCirillic());
+        payment.inputData(DataHelper.getCardHolderCyrillic());
         payment.waitNotificationWrongFormat();
     }
 

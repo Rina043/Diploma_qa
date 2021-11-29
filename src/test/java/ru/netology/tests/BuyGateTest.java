@@ -153,7 +153,7 @@ public class BuyGateTest {
     void buyNegativeOwnerCyrillic() {
         val startPage = new paymentMethod();
         val payment = startPage.goToBuyPage();
-        payment.inputData(DataHelper.getCardHolderCirillic());
+        payment.inputData(DataHelper.getCardHolderCyrillic());
         payment.waitNotificationWrongFormat();
     }
 
