@@ -15,8 +15,8 @@
 ## Документация
 
 - [План автоматизации тестирования](https://github.com/Rina043/Diploma_qa/blob/main/documents/Plan.md)
-- [Отчет по итогам тестирования]
-- [Комплексный отчет по итогам всего процесса автоматизации]
+- [Отчет по итогам тестирования](https://github.com/Rina043/Diploma_qa/blob/main/documents/Report.md)
+- [Комплексный отчет по итогам всего процесса автоматизации](https://github.com/Rina043/Diploma_qa/blob/main/documents/Summary.md)
 
 ## **Перед началом работы**
 
